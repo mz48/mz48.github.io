@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head><meta charset="UTF-8"></head>
+    <body style="background-color: rgba(240, 207, 243, 0.1);">
+        <div class="top">
+            <img id="logo" src="images/logo.png" alt="My logo">
+            <nav id="navbar" class="navbar navbar-dark navbar-fixed-top">
+            
+              <a id="work-text" class="navbar-brand" href="index.html">work</a>
+              <a id="projects-text" class="navbar-brand " href="projects.html">projects</a>
+              <a id="about-text" class="navbar-brand" href="about.html">me</a> 
+             
+            </nav>
+             <div>
+                <div class="center"> 
+                <img style="width: 700px; margin-top: 20px; margin-bottom: 0px;" src="images/colors.gif"> 
+              <h3 style="font-size:30px;padding-top: 50px; text-align: center; font-family: Arial, Helvetica, sans-serif;">React Color App </h3>
+
+                <p>Over winter break, I worked on a React Bootcamp from Udemy (The Modern React Bootcamp by Colt Steele) which involved an extensive color palette project that involved using libraries such as chrome picker, rc-slider, chroma js and material ui. I was able to learn a lot about parent and child components and using react-router as the project involved an information hierarchy of the palette list/home, a specific palette, color and shade. There was a lot of practice with state involved as there is a component to create a new palette by choosing a set of colors and being able to access the new palette through the palette list and colors through clicking on the palette. This involved passing many components such as the color boxes and shades. I am still working on finalizing this project, but here is the project demo.  <a href="http://react-colors-app.surge.sh/" target="_blank">React Color App Demo</a></p>                
+
+
+                  <h3  style="margin-top: 50px;">Information hierarchy</h3>
+                 <p>This figure shows some of the functions and render methods used to convey props and information like from  the basic <Colorbox/> component from the parent components to the children components.
+                 </p>
+                 <img style="width: 1200px; margin-top: 30px;" src="colorimages/info.png">
+                    <h3  style="margin-top: 50px;">Using chroma js and rc-slider</h3>
+                    <p>The chroma js library was used to get the hex, rgb and rgba values of the colors as well as convert the values when copying colors. It also provides a luminance value that allows the copy button and name of the colors to become darker or lighter depending on the shade of color it is associated with. This allows the user to still be able to see the value and button despite changing the shade of the palette to be darker or lighter. The rc-slider library was also incorporated to change the palette shade based on values incrementing by 100.</p>
+                    
+                    <img style="width: 900px; margin-top: 30px;" src="colorimages/shade1.png">
+                    <img style="width: 900px; margin-top: 30px;" src="colorimages/shade2.png">
+                    <img style="width: 900px; margin-top: 30px;" src="colorimages/shade3.png">
+                    <img style="width: 900px; margin-top: 30px;" src="colorimages/shades.png">
+                    
+                    <h3  style="margin-top: 50px;">Using Material UI</h3>
+                    <p>
+                        The library material ui was used for the color value snackbar on the top right, the persistent drawer, validation form and buttons in the palette creator. I enjoyed using material ui as the imported elements had different styles, such as the buttons, that could be implemented and the features were very intuitive. Many of the css files were also later refactored into a default 
+                        { withStyles } export from material-ui/styles.
+                        
+                        </p>
+                    <img style="width: 900px; margin-top: 30px; margin-bottom: 50px;"  src="colorimages/createpalette.png">
+    
+                    </div>
+                  <footer>
+                    <span> Coded & made with ♥ by Miyu Zheng © 2021</span>
+                    
+                  </footer>
+            
+        <link rel="stylesheet" type="text/css" href="roboticarm.css">
+        <script src="logic.js"></script>
+    </body>
+        </html>
